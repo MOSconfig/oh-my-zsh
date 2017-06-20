@@ -45,7 +45,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew git-flow mvn osx redis-cli svn history grunt npm pip python bower adb cp man rvm laravel nmap go composer gradle zsh-syntax-highlighting zsh-completions gem docker pod rsync sudo zsh-wakatime gulp cargo golang node rust)
+plugins=(git brew git-flow mvn osx redis-cli svn grunt npm pip python bower adb cp man rvm laravel nmap go composer gradle gem docker pod rsync sudo zsh-wakatime gulp cargo golang node rust zsh-autosuggestions zsh-syntax-highlighting)
 autoload -U compinit && compinit
 
 # User configuration
