@@ -33,10 +33,12 @@ eval $(thefuck --alias)
 #httpstat
 alias 'hp'='httpstat'
 
-export  HTTPSTAT_SHOW_IP=true
-export  HTTPSTAT_SHOW_SPEED=true
-export  HTTPSTAT_SAVE_BODY=false
-export  HTTPSTAT_DEBUG=true
+export HTTPSTAT_SHOW_IP=true
+export HTTPSTAT_SHOW_SPEED=true
+export HTTPSTAT_SAVE_BODY=false
+export HTTPSTAT_DEBUG=true
+
+
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 alias "ctags"="ctags --totals"
@@ -46,3 +48,5 @@ alias "ctagsLAVAREL"="ctagsNPM -exclude='html' --exclude='*js' --exclude='*vende
 alias "ctagsCPP"="ctags --languages=c++"
 alias "ctagsPHP"="ctags --languages=php"
 alias "ctagsC"="ctags --languages=c"
+
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
