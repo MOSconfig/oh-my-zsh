@@ -50,3 +50,7 @@ alias "ctagsPHP"="ctags --languages=php"
 alias "ctagsC"="ctags --languages=c"
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+alias "checkpatch.pl"="checkpatch.pl --no-tree -f"
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
