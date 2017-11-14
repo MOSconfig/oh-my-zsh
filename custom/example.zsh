@@ -16,8 +16,8 @@ export PATH=$PATH:/Users/Mike/Workspace/my-shell
 export GOPATH=/Users/Mike/Workspace/go-code
 
 #Bochs
-export BOCHS_PATH=/opt/bochs/bin
-export PATH=$PATH:$BOCHS_PATH
+export PORT_PATH=/opt/local/bin
+export PATH=$PATH:$PORT_PATH
 
 #Android NDK
 export ANDROID_NDK_PATH=/Users/Mike/Public/android-ndk/android-ndk-r11c
@@ -26,9 +26,6 @@ export PATH=$PATH:$ANDROID_NDK_PATH
 #Android SDK
 export ANDROID_SDK_PATH=/Users/Mike/Public/android-sdk/android-sdk-r24/platform-tools/
 export PATH=$PATH:$ANDROID_SDK_PATH
-
-eval $(thefuck --alias)
-
 
 #httpstat
 alias 'hp'='httpstat'
@@ -54,3 +51,7 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 alias "checkpatch.pl"="checkpatch.pl --no-tree -f"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export HOMEBREW_GITHUB_API_TOKEN="52221d9790a1a8ebfe137fd91967272be0fed554"
+
+# LLVM
+export PATH="/usr/local/opt/llvm/bin:$PATH"

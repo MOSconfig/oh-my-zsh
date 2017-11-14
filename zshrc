@@ -45,7 +45,7 @@ ZSH_THEME="mortalscumbag"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew git-flow mvn osx redis-cli svn grunt npm pip python bower adb cp man rvm laravel nmap go composer gradle gem docker pod rsync sudo zsh-wakatime gulp cargo golang node rust autojump)
+plugins=(git git-flow mvn osx redis-cli svn grunt npm pip python bower adb cp man rvm laravel nmap go composer gradle gem docker pod rsync sudo zsh-wakatime gulp cargo golang node rust autojump port)
 autoload -U compinit && compinit
 
 # User configuration
@@ -81,10 +81,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-
-export PYENV_ROOT=/usr/local/var/pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
