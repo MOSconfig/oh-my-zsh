@@ -46,6 +46,8 @@ alias "ctagsCPP"="ctags --languages=c++"
 alias "ctagsPHP"="ctags --languages=php"
 alias "ctagsC"="ctags --languages=c"
 
+alias "sl"="ls"
+
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 alias "checkpatch.pl"="checkpatch.pl --no-tree -f"
@@ -54,4 +56,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export HOMEBREW_GITHUB_API_TOKEN="52221d9790a1a8ebfe137fd91967272be0fed554"
 
 # LLVM
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+alias "g++"="g++ -std=c++11"
+
 export PATH="/usr/local/opt/llvm/bin:$PATH"
