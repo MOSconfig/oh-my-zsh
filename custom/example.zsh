@@ -59,5 +59,6 @@ export HOMEBREW_GITHUB_API_TOKEN="52221d9790a1a8ebfe137fd91967272be0fed554"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 alias "g++"="g++ -std=c++11"
+alias "ls"="exa -F"
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
