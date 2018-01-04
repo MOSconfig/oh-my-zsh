@@ -53,7 +53,6 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 alias "checkpatch.pl"="checkpatch.pl --no-tree -f"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export HOMEBREW_GITHUB_API_TOKEN="ab0bef9d83f9078f5507d6201b750d100a449b61"
 
 # LLVM
 export PATH="/usr/local/opt/llvm/bin:$PATH"
