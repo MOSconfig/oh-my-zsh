@@ -61,3 +61,5 @@ alias "g++"="g++ -std=c++11"
 alias "ls"="exa -F"
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+alias "pcl_viewer"="/usr/local/Cellar/pcl/1.8.1_2/pcl_viewer.app/Contents/MacOS/pcl_viewer"
