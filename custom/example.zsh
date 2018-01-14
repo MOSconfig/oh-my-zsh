@@ -50,14 +50,13 @@ alias "sl"="ls"
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
-alias "checkpatch.pl"="checkpatch.pl --no-tree -f"
+alias "checkStyle"="checkpatch.pl --no-tree -f"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # LLVM
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
-alias "g++"="g++ -std=c++11"
 alias "ls"="exa -F"
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
