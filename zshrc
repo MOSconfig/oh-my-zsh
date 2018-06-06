@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.composer/vendor/bin" #Add Composer bin
 
 export ASAN_OPTIONS=detect_leaks=1
 
