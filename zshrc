@@ -7,6 +7,7 @@ export ZSH=/Users/Mike/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="mortalscumbag"
 
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -45,7 +46,7 @@ ZSH_THEME="mortalscumbag"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow mvn osx redis-cli svn grunt npm pip python bower adb cp man rvm laravel nmap go composer gradle gem docker pod rsync sudo zsh-wakatime gulp cargo golang node rust autojump port)
+plugins=(git mvn grunt npm pip python bower laravel nmap composer gradle sudo zsh-wakatime gulp cargo node rust autojump)
 autoload -U compinit && compinit
 
 # User configuration
