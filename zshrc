@@ -5,8 +5,8 @@ export ZSH=/Users/Mike/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="mortalscumbag"
-
+# ZSH_THEME="mortalscumbag"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -46,7 +46,7 @@ ZSH_THEME="mortalscumbag"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mvn grunt npm pip python bower laravel nmap composer gradle sudo zsh-wakatime gulp cargo node rust autojump)
+plugins=(adb git mvn npm pip python laravel nmap composer zsh-wakatime gulp cargo cp rust tmux)
 autoload -U compinit && compinit
 
 # User configuration
