@@ -46,7 +46,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mvn npm pip python laravel nmap composer zsh-wakatime gulp cargo cp rust tmux autojump)
+plugins=(git mvn npm pip python laravel nmap composer gulp cargo cp rust tmux autojump)
 autoload -U compinit && compinit
 
 # User configuration
