@@ -52,10 +52,18 @@ autoload -U compinit && compinit
 # User configuration
 
 export PATH="/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+
+#my shell
+export PATH=$PATH:/Users/Mike/Workspace/my-shell
+
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
+source $HOME/.cargo/env
+
+# Homebrew
+export PATH=$HOME/Public/homebrew/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
