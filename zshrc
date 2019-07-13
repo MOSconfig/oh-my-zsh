@@ -4,12 +4,12 @@ export ZSH=/Users/Mike/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-# ZSH_THEME="mortalscumbag"
-ZSH_THEME="ys"
+    # time that oh-my-zsh is loaded.
+    # ZSH_THEME="mortalscumbag"
+    ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+    # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -27,17 +27,17 @@ ZSH_THEME="ys"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+    # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+    # under VCS as dirty. This makes repository status check for large repositories
+        # much, much faster.
+        # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+    # stamp shown in the history command output.
+    # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+    # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -50,29 +50,34 @@ plugins=(git mvn npm pip python laravel nmap composer gulp cargo cp rust tmux au
 autoload -U compinit && compinit
 
 # User configuration
-
 export PATH="/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin"
 
+#Make
+export PATH="/Users/Mike/Public/homebrew/opt/make/libexec/gnubin:$PATH"
+
+#LLVM
+export PATH="/Users/Mike/Public/homebrew/opt/llvm/bin:$PATH"
+
 #my shell
-export PATH=$PATH:/Users/Mike/Workspace/my-shell
+export PATH="/Users/Mike/Workspace/my-shell:$PATH"
 
 # Rust
-export PATH=$PATH:$HOME/.cargo/bin
+export PATH="$HOME/.cargo/bin:$PATH"
 source $HOME/.cargo/env
 
 # Homebrew
-export PATH=$HOME/Public/homebrew/bin:$PATH
+export PATH="$HOME/Public/homebrew/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+    # if [[ -n $SSH_CONNECTION ]]; then
+        #   export EDITOR='vim'
+        # else
+            #   export EDITOR='mvim'
+            # fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -84,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+    #
+    # Example aliases
+    # alias zshconfig="mate ~/.zshrc"
+    # alias ohmyzsh="mate ~/.oh-my-zsh"
