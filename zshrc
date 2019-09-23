@@ -46,20 +46,20 @@ export ZSH=/Users/Mike/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mvn npm pip python laravel nmap composer gulp cargo cp rust tmux autojump)
+plugins=(git mvn npm pip python laravel nmap composer gulp cargo cp rust tmux autojump brew)
 autoload -U compinit && compinit
 
 # User configuration
 export PATH="/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin"
 
 #Make
-export PATH="/Users/Mike/Public/homebrew/opt/make/libexec/gnubin:$PATH"
+export PATH="$HOME/Public/homebrew/opt/make/libexec/gnubin:$PATH"
 
 #LLVM
-export PATH="/Users/Mike/Public/homebrew/opt/llvm/bin:$PATH"
+export PATH="$HOME/Public/homebrew/opt/llvm/bin:$PATH"
 
 #my shell
-export PATH="/Users/Mike/Workspace/my-shell:$PATH"
+export PATH="$HOME/Workspace/my-shell:$PATH"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -67,6 +67,7 @@ source $HOME/.cargo/env
 
 # Homebrew
 export PATH="$HOME/Public/homebrew/bin:$PATH"
+export PATH="$HOME/Public/homebrew/sbin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
