@@ -52,12 +52,6 @@ autoload -U compinit && compinit
 # User configuration
 export PATH="/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin"
 
-#Make
-export PATH="$HOME/Public/homebrew/opt/make/libexec/gnubin:$PATH"
-
-#LLVM
-export PATH="$HOME/Public/homebrew/opt/llvm/bin:$PATH"
-
 #my shell
 export PATH="$HOME/Workspace/my-shell:$PATH"
 
