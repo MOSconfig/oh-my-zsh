@@ -1,6 +1,4 @@
 pyenv_config_warning() {
-  [[ "$ZSH_PYENV_QUIET" != true ]] || return 0
-
   local reason="$1"
   local pyenv_root="${PYENV_ROOT/#$HOME/\$HOME}"
   cat >&2 <<EOF
@@ -62,14 +60,14 @@ if [[ $FOUND_PYENV -ne 1 ]]; then
 fi
 
 if [[ $FOUND_PYENV -eq 1 ]]; then
+  # Setup $PYENV_ROOT if not already set
   if [[ -z "$PYENV_ROOT" ]]; then
-    # This is only for backwards compatibility with users that previously relied
-    # on this plugin exporting it. pyenv itself does not require it to be exported
     export PYENV_ROOT="$(pyenv root)"
+    pyenv_config_warning 'missing $PYENV_ROOT'
   fi
 
   # Add pyenv shims to $PATH if not already added
-  if [[ -z "${path[(Re)$(pyenv root)/shims]}" ]]; then
+  if [[ -z "${path[(Re)$PYENV_ROOT/shims]}" ]]; then
     eval "$(pyenv init --path)"
     pyenv_config_warning 'missing pyenv shims in $PATH'
   fi
@@ -78,7 +76,7 @@ if [[ $FOUND_PYENV -eq 1 ]]; then
   eval "$(pyenv init - --no-rehash zsh)"
 
   # If pyenv-virtualenv exists, load it
-  if [[ "$(pyenv commands)" =~ "virtualenv-init" && "$ZSH_PYENV_VIRTUALENV" != false ]]; then
+  if [[ -d "$PYENV_ROOT/plugins/pyenv-virtualenv" ]]; then
     eval "$(pyenv virtualenv-init - zsh)"
   fi
 
