@@ -5,7 +5,7 @@ export ZSH=/Users/Mike/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+ZSH_THEME="random"
 # ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -46,7 +46,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mvn npm pip python laravel nmap composer gulp cargo cp rust tmux autojump brew)
+plugins=(git mvn npm pip python laravel nmap composer gulp cp rust tmux autojump brew cargo)
 autoload -U compinit && compinit
 
 # User configuration
@@ -54,10 +54,6 @@ export PATH="/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin"
 
 #my shell
 export PATH="$HOME/Workspace/my-shell:$PATH"
-
-# Rust
-export PATH="$HOME/.cargo/bin:$PATH"
-source $HOME/.cargo/env
 
 # Homebrew
 export PATH="$HOME/Public/homebrew/bin:$PATH"
