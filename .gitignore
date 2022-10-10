@@ -7,3 +7,6 @@ log/
 *.swp
 custom/plugins/
 .DS_Store
+
+# editor configs
+.vscode
