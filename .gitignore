@@ -10,3 +10,4 @@ custom/plugins/
 
 # editor configs
 .vscode
+.idea
